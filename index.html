@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Munamii Cakery</title>
+    <!-- Local css -->
+    <link rel="stylesheet" href="styles.css" />
+    <!-- Google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="wrapper">
+      <nav id="nav">
+        <ul>
+          <li>
+            <a href="#hero" id="homeLink">Home</a>
+          </li>
+          <li>
+            <a href="#products" id="productsLink">Products</a>
+          </li>
+          <li>
+            <a href="#about" id="aboutLink">About</a>
+          </li>
+          <li>
+            <a href="#contact" id="contactLink">Contact</a>
+          </li>
+        </ul>
+      </nav>
+
+      <div id="sections">
+        <section id="hero" class="show-section">
+          <div class="hero-left"></div>
+          <div class="hero-right">
+            <div class="hero-content">
+              <img
+                src="https://d2j6dbq0eux0bg.cloudfront.net/images/16830190/1498589015.jpg"
+                alt="Munamii logo."
+              />
+              <h1>We come to your house!</h1>
+              <a href="#products">Shop</a>
+            </div>
+          </div>
+        </section>
+
+        <section id="products" class="hide-section">
+          <h1>Cupcakes</h1>
+          <div id="cupcakeGrid" class="productGrid"></div>
+
+          <h1>Wedding Cakes</h1>
+          <div id="weddingGrid" class="productGrid"></div>
+        </section>
+
+        <section id="about" class="hide-section">
+          <div class="about-left"></div>
+          <div class="about-right">
+            <h1>About Munamii</h1>
+            <p>
+              At Munamii Cakery, every cake, every box of cupcakes we make has a
+              very special value for us. We not only want to bring a dessert to
+              your table but rather a unique experience for you, which will
+              become an unforgettable memory. We have been in the pastry market
+              for more than 8 years and now we offer you a new way to buy
+              through our website.
+            </p>
+          </div>
+        </section>
+
+        <section id="contact" class="hide-section">
+          <div class="contact-left">
+            <h1>Get in touch with us</h1>
+            <p>
+              We love hearing from you! Whether you have a question, feedback,
+              or just want to say hello, we're here and ready to assist you.
+              Feel free to reach out to us
+            </p>
+          </div>
+          <form class="contact-right">
+            <label for="name">Name</label>
+            <input type="text" id="name" placeholder="Your name" required />
+            <label for="email">Email</label>
+            <input type="text" id="email" placeholder="Your email" required />
+            <label for="message">Message</label>
+            <textarea
+              name=""
+              id="message"
+              cols="30"
+              rows="10"
+              required
+            ></textarea>
+            <button>Send Message</button>
+          </form>
+        </section>
+      </div>
+
+      <footer>
+        <div class="footer-content">
+          <ul>
+            <li>
+              <a href="https://www.facebook.com/munamiicupcakes" target="_blank"
+                ><i class="fa-brands fa-facebook"></i
+              ></a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/munamii.cakery" target="_blank"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+            </li>
+            <li>
+              <a href="mailto:infomunamii@gmail.com"
+                ><i class="fa-solid fa-envelope"></i
+              ></a>
+            </li>
+          </ul>
+          <form>
+            <input type="text" placeholder="Your email" />
+            <button>Join!</button>
+          </form>
+        </div>
+        <small>© 2024 Munamii Cakery</small>
+      </footer>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
