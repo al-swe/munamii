@@ -23,7 +23,32 @@
     />
   </head>
   <body>
+    <!-- Mobile nav -->
     <div class="wrapper">
+      <button class="hamburger-menu" id="hamburger-menu">
+        <span class="line"></span>
+        <span class="line"></span>
+        <span class="line"></span>
+      </button>
+
+      <div id="mobileNav" class="mobile-nav">
+        <ul>
+          <li>
+            <a href="#hero" id="homeLink">Home</a>
+          </li>
+          <li>
+            <a href="#products" id="productsLink">Products</a>
+          </li>
+          <li>
+            <a href="#about" id="aboutLink">About</a>
+          </li>
+          <li>
+            <a href="#contact" id="contactLink">Contact</a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Normal nav -->
       <nav id="nav">
         <ul>
           <li>
@@ -88,21 +113,20 @@
               Feel free to reach out to us
             </p>
           </div>
-          <form class="contact-right">
-            <label for="name">Name</label>
-            <input type="text" id="name" placeholder="Your name" required />
-            <label for="email">Email</label>
-            <input type="text" id="email" placeholder="Your email" required />
-            <label for="message">Message</label>
-            <textarea
-              name=""
-              id="message"
-              cols="30"
-              rows="10"
-              required
-            ></textarea>
-            <button>Send Message</button>
-          </form>
+          <div class="contact-right">
+            <form id="contactForm">
+              <label for="name">Name</label>
+              <input type="text" id="name" placeholder="Your name" />
+              <label for="email">Email</label>
+              <input type="text" id="email" placeholder="Your email" />
+              <label for="message">Message</label>
+              <textarea name="" id="message" cols="30" rows="10"></textarea>
+              <button id="formBtn">Send Message</button>
+            </form>
+            <h3 id="successMsg" class="hidden">
+              Message has been sent, thank you!
+            </h3>
+          </div>
         </section>
       </div>
 
@@ -125,14 +149,24 @@
               ></a>
             </li>
           </ul>
-          <form>
-            <input type="text" placeholder="Your email" />
-            <button>Join!</button>
-          </form>
+          <div>
+            <h4>Join our mailing list</h4>
+            <form class="footerForm">
+              <input type="email" id="joinInput" placeholder="Your email" />
+              <button id="joinBtn">Join!</button>
+            </form>
+            <h5 id="joinConfirm" class="hidden">
+              Email added to mailing list!
+            </h5>
+          </div>
         </div>
         <small>© 2024 Munamii Cakery</small>
       </footer>
     </div>
+    <!-- GSAP -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <!-- Local js -->
     <script src="app.js"></script>
+    <script src="gsap.js"></script>
   </body>
 </html>
