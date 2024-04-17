@@ -76,10 +76,6 @@ nav a:hover {
   transition: all 0.3s ease;
 }
 
-#sections {
-  /* background-color: white; */
-}
-
 section {
   width: 100vw;
   min-height: 50vh;
